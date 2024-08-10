@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>For Yeyen</title> 
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .spotify-player {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        margin: 10px;
+        z-index: 1000; 
+    }
+    .wrapper {
+        display: none;
+    }
+    .wrapper.active {
+        display: block;
+    }
+  </style>
+ </head> 
+ <body> 
+    <div class="spotify-player">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5o5WaO9pzPhXSGIrTIYVce?utm_source=generator"
+            width="240" 
+            height="100" 
+            frameBorder="0" 
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy">
+        </iframe>
+    </div>
+
+  <div class="wrapper active" id="slide1"> 
+   <h2 class="question">Can we try again?</h2>
+   <h2 class="question">And do it right this time?</h2>
+   <img class="img" alt="img" src="https://raw.githubusercontent.com/DzarelDeveloper/Img/main/AskCrush.png"> 
+   <div class="btn-group"> 
+     <button class="yes-btn">Yes</button> 
+     <button class="no-btn">No</button> 
+   </div> 
+  </div> 
+
+  <div class="wrapper" id="slide2">
+   <h2 class="question">I still love you</h2>
+   <h2 class="question">How about you?</h2>
+   <img class="img" alt="img" src="https://stickermaker.s3.eu-west-1.amazonaws.com/storage/uploads/sticker-pack/sad-cats-1/sticker_1.png?fb875473ab21e1ad8373e1447b46e55c&d=200x200"> 
+   <div class="btn-group"> 
+     <button class="yes-btn-2">Yes</button> 
+     <button class="no-btn">No</button> 
+   </div> 
+  </div>
+
+  <div class="wrapper" id="slide3">
+   <h2 class="question">Thank you for giving us another chance!</h2>
+   <img class="img" alt="img" src="https://sdl-stickershop.line.naver.jp/products/0/0/1/1303392/android/stickers/12265847.png;compress=true"> 
+   <!-- Add any additional content you want here -->
+  </div>
+
+  <script src="script.js"></script>
+ </body>
+</html>
